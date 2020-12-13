@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Card from "../component/card";
+import Card from "../component/Card";
 
 const Index = () => {
   React.useEffect(() => {
