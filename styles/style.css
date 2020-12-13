@@ -4,7 +4,7 @@
 }
 
 .link {
-  border: 1px solid red;
+  border: 1px solid #c4063e;
   padding: 0.75rem 2rem;
   border-radius: 100px;
   font-size: 1.2rem;
@@ -20,15 +20,20 @@ button:focus {
 }
 
 .link-active {
-  background-color: red;
+  background-color: #c4063e;
 }
 .link:hover {
-  background-color: red;
+  background-color: #c4063e;
 }
 .hero-title {
   font-size: 3.2rem;
   text-align: center;
   margin: 3rem 0;
+}
+
+.hero-link-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .hero-link-container .link {
@@ -52,9 +57,10 @@ button:focus {
   transform: scale(1.015);
 }
 .card-text {
-  padding: 3rem;
+  padding: 5vw;
 }
 .card-text p {
+  margin-top: 0;
   font-size: 1.2rem;
   line-height: 2.5rem;
   margin-bottom: 3rem;
@@ -64,7 +70,7 @@ button:focus {
   min-height: 450px;
 
   object-position: center;
-  object-fit: fill;
+  object-fit: cover;
 }
 .popup-container {
   width: 100vw;
@@ -109,6 +115,10 @@ button:focus {
     min-height: 300px;
   }
 }
+
+.primary {
+  background-color: #c4063e;
+}
 @media screen and (max-width: 600px) {
   html {
     font-size: 80%;
@@ -119,6 +129,12 @@ button:focus {
   }
   .card-img {
     width: 100%;
-    min-height: 300px;
+    max-height: 200px;
+  }
+  .card-text {
+    padding: 2rem;
+  }
+  .card-text p {
+    margin-bottom: 1rem;
   }
 }
