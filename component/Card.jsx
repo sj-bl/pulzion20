@@ -28,7 +28,7 @@ const Card = (props) => {
               flexWrap: "wrap",
             }}
           >
-            <Link href="#">
+            <Link href={props.registrationLink || "#"}>
               <a className="link link-active" style={{ marginTop: "1rem" }}>
                 Register
               </a>
