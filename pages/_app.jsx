@@ -4,16 +4,16 @@ import "../styles/globals.css";
 export default function MyApp({ Component, pageProps }) {
   return (
     <>
-      <header
+      <Component {...pageProps} />
+      <footer
         style={{
-          padding: "0.5rem 0",
+          padding: "1.6rem 0",
           backgroundColor: "#111",
           textAlign: "center",
         }}
       >
-        <p>Developed By Swapnil J</p>
-      </header>
-      <Component {...pageProps} />
+        <a href="https://github.com/developedBySJ">Developed By Swapnil J</a>
+      </footer>
     </>
   );
 }

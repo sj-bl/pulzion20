@@ -18,8 +18,9 @@ const Card = (props) => {
           className="card-img"
         />
         <div className="card-text">
+          <h1>{props.title}</h1>
           <p>
-            {props.content ||
+            {props.description ||
               "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus nulla autem ratione commodi exercitationem esse dignissimos nihil eos.Cumque consequuntur doloremque velit totam"}
           </p>
           <div
